@@ -1,0 +1,213 @@
+*{
+    /* background-color: rgb(255, 255, 255); */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.nav-1{
+    width: 81vw;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-sec-1{
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    gap: 30px;
+}
+.nav-sec-1 div{
+    border: 1px solid rgb(240, 236, 236);
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+.nav-sec-1 div input{
+    width: 500px;
+    height: 35px;
+    border: none;
+}
+.nav-sec-2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-sign{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-sign button{
+    background-color: rgb(224, 81, 81);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.nav-2{
+    width: 81vw;
+    /* background-color: #f5f5f5; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+.nav-2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.nav-2-left{
+    display: flex;
+    padding: 5px 0px;
+    gap: 20px;
+}
+.nav-2-right{
+    display: flex;
+    padding: 5px 0px;
+    gap: 20px;
+}
+.section-1{
+    width: 80vw;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.section-1 a{
+    color: black;
+}
+.sec-1-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-1-head a{
+    color: red;
+    text-decoration: none;
+}
+.sec-1-card .card-img img{
+    border-radius: 10px;
+}
+.sec-1-card{
+    /* padding: 10px;
+    display: flex;
+    gap: 32px;
+    flex-direction: row; */
+    scroll-behavior: smooth;
+    transition: transform 1000ms;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(10, calc(20% - 25.6px));
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-flow: column;
+    gap: 8px 32px;
+    overflow: scroll hidden;
+    transform: initial;
+}
+.ads-1{
+    padding: 50px;
+    width: 80vw;
+    margin: auto;
+    /* background-color: antiquewhite; */
+}
+.section-2{
+    width: 80vw;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.sec-2-img{
+    display: flex;
+    gap: 40px;
+    margin: auto;
+}
+.sec-2-img img{
+    border-radius: 10px;
+}
+.section-3-bg{
+    background-color: #2B3149;
+    margin: 40px 0px;
+    padding: 20px;
+    color: white;
+}
+.section-3{
+    width: 80vw;
+    margin: auto;
+}
+.sec-3-block{
+    scroll-behavior: smooth;
+    transition: transform 1000ms;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(10, calc(20% - 25.6px));
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-flow: column;
+    gap: 8px 32px;
+    overflow: scroll hidden;
+    transform: initial;
+    padding: 20px 0px;
+}
+.sec-3-card img{
+    border-radius: 10px;
+}
+.section-4{
+    width: 80vw;
+    margin: auto;
+}
+.section-4-block{
+    display: flex;
+    gap: 28px;
+}
+.sec-4-card img{
+    border-radius: 10px;
+}
+.footer{
+    padding-top: 20px;
+}
+.footer-1{
+    padding: 30px 150px;
+    color: white;
+    background-color: #313035;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-1 div{
+    display: flex;
+}
+.footer-1 button{
+    background-color:rgb(224, 81, 81);
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+.footer-2{
+    background-color: #404043;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-2 .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px 0px;
+}
+.footer-3{
+    background-color: #373739;
+    color: gray;
+    padding: 40px 140px;
+}
+.footer-3 span{
+    font-size: 10px;
+}
+.footer-4{
+    background-color: #373739;
+}

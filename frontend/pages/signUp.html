@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signUp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Create Account</h2>
+            <div class="form" id="form">
+            <form action="/signup" method="POST">
+
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email-phone">Email or Phone</label>
+                <input type="text" id="emailphone" name="emailOrPhone" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirmpassword" name="confirmPassword" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+            <p class="signin-link">Already have an account? <a href="../pages/signin.html">Sign In</a></p>
+        </div>
+    </div>
+    <script src="../js/signup.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signUp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Create Account</h2>
+            <div class="form" id="form">
+                <!-- Removed action and method to let JS handle submission -->
+                <form id="signupForm">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="email-phone">Email or Phone</label>
+                    <input type="text" id="emailphone" name="emailOrPhone" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirmpassword" name="confirmPassword" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <p class="signin-link">Already have an account? <a href="../pages/signin.html">Sign In</a></p>
+        </div>
+    </div>
+    <script src="../js/signup.js"></script>
+</body>
+</html>
+
