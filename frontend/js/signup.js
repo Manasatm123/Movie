@@ -46,7 +46,7 @@ document.getElementById('signupForm').addEventListener('submit', async function 
         const data = await res.json();
         if (res.status === 201) {
             alert(data.msg);
-            window.location.href = "../index.html";
+            window.location.href = "./signin.html";
         } else {
             alert(data.error);
         }

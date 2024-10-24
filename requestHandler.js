@@ -21,11 +21,18 @@ export async function addMovie(req,res) {
 }
 
 export async function getMovies(req, res) {
-    console.log("get employee");
+    console.log("==================================");
+
+    console.log(req.user);
+
+    const usr=await userschema.findOne({_id:req.user.UserID})
+    console.log(usr);
+
+    console.log("Movies");
 
     const data = await movieSchema.find();
     console.log(data);
-    res.status(200).send(data); 
+    res.status(200).send({data,user:usr.username}); 
 }
 
 export async function getMovie(req,res) {
@@ -93,7 +100,7 @@ export async function adduser(req,res) {
     
 }
 
-
+ 
 export async function login(req,res) {
     console.log(req.body);
     const {emailphone,password}=req.body;
@@ -111,10 +118,15 @@ export async function login(req,res) {
     if (success !==true)
         return res.status(500).send({msg: "user or password not exits"})
     const token = await sign({UserID:user._id},process.env.JWT_KEY,{expiresIn:"24h"})
-    res.status(200).send(token)
+    res.status(200).send({token})
      
-        
-    
+}
+
+export async function home(req,res){
+    console.log("end point");
+    console.log(req.user.UserID);
+    const user=userschema.findOne({_id:req.user.UserID})
+    res.status(200).send({user:user.username})
     
     
 }

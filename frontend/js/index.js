@@ -1,9 +1,13 @@
 async function getMovies() {
-    const res = await fetch("http://localhost:3001/api/getMovies");
+    const token=localStorage.getItem("token")
+    const res = await fetch("http://localhost:3001/api/getMovies",{
+    headers:{"authorization":`Bearer ${token}`}
+})
     const movie=await res.json();
     console.log(movie);
+    document.getElementById("user").textContent=movie.user
     str=``;
-    movie.map((data)=>{
+    movie.data.map((data)=>{
         str+=`
             <div>
                     <a href="pages/movie.html?id=${data._id}">
